@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "AqlcrsDdPusCMS/aXOWGIYYwDCBDigo3aRp6zdIXJgQvegZNub6j4M7MG2njogBc9X9utaOsA9jpKOgBnnJWzA==",
+  "dgSpecHash": "/I25aBSNIdCcai5bY3xS6GuXZQrWQ8n3SfRLFRk5fSYXp8suiBOLtsPa3F1x15UCt8659HV5h7yonIQd9aFwEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Neda\\Desktop\\IntegruotosProgAplinkos\\3LD\\3LD.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nza\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\nza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }
