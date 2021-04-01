@@ -25,4 +25,4 @@ Added functionality:
 -  Implemented list generation with 10000, 100000, 1000000, 10000000 students. Lists are sorted according to final marks. Sorted students list is divided to two new files
 
 Performance testing results:
-![Alt text](assets/Screenshot 2021-04-01 at 21.21.37.png?raw=true 'Performance testing results')
+![Alt text](3LD/assets/Screenshot 2021-04-01 at 21.21.37.png?raw=true 'Performance testing results')
