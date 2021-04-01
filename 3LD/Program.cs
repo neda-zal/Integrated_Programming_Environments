@@ -16,6 +16,7 @@ namespace _3LD
                                 " 2 - Show students average final score.\n" +
                                 " 3 - Show students median final score.\n" +
                                 " 4 - Add random student.\n" +
+                                " 5 - Add students from file.\n" +
                                 " 0 - Exit.\n");
                 Console.Write("Your choice: ");
                 pas = int.Parse(Console.ReadLine());
@@ -38,6 +39,11 @@ namespace _3LD
                     case 4: {
                         Student student = new Student();
                         students.Add(student);
+                        break;
+                    }
+                    case 5: {
+                        List<Student> tmp = Student.ReadFromFile();
+                        students.AddRange(tmp);
                         break;
                     }
                     default: {

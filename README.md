@@ -10,3 +10,8 @@ Added functionality:
 -  Display student list with average grades
 -  Display student list with average and median value of grades
 -  Add randomized student to the list
+
+### Release v0.2
+
+-  Added functionality to read students data from csv file and add them to the list
+-  Table data is sorted accordind to students surname

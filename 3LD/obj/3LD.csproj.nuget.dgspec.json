@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj": {}
+    "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/3LD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj": {
+    "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/3LD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
+        "projectUniqueName": "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/3LD.csproj",
         "projectName": "3LD",
-        "projectPath": "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
-        "packagesPath": "C:\\Users\\nza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\obj\\",
+        "projectPath": "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/3LD.csproj",
+        "packagesPath": "/Users/neda_zalieskaite/.nuget/packages/",
+        "outputPath": "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/neda_zalieskaite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -47,30 +47,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
