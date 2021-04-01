@@ -19,3 +19,9 @@ Added functionality:
 ### Release v0.3
 
 -  Exception handling was implemented with releases v0.1 and v0.2
+
+### Release v0.4
+
+-  Implemented list generation with 10000, 100000, 1000000, 10000000 students. Lists are sorted according to final marks. Sorted students list is divided to two new files
+
+Performance testing results:

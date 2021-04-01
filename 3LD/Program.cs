@@ -17,6 +17,7 @@ namespace _3LD
                                 " 3 - Show students median final score.\n" +
                                 " 4 - Add random student.\n" +
                                 " 5 - Add students from file.\n" +
+                                " 6 - Generate files with 10000, 100000, 1000000, 10000000 students.\n" +
                                 " 0 - Exit.\n");
                 Console.Write("Your choice: ");
                 pas = int.Parse(Console.ReadLine());
@@ -44,6 +45,10 @@ namespace _3LD
                     case 5: {
                         List<Student> tmp = Student.ReadFromFile();
                         students.AddRange(tmp);
+                        break;
+                    }
+                    case 6: {
+                        Helpers.Test();
                         break;
                     }
                     default: {
