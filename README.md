@@ -14,4 +14,4 @@ Added functionality:
 ### Release v0.2
 
 -  Added functionality to read students data from csv file and add them to the list
--  Table data is sorted accordind to students surname
+-  Table data is sorted according to students name
