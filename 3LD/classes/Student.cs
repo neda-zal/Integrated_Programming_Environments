@@ -115,6 +115,10 @@ namespace _3LD {
                 return student;
         }
 
+        public double FinalPoints() {
+            return 0.3 * Homeworks.Average() + 0.7 * Exam;
+        }
+
         public static void showInTable(List<Student> students, Boolean median) {
 
             students = students.OrderBy(student => student.Name).ToList();
@@ -129,7 +133,7 @@ namespace _3LD {
                 Console.Write('\n');
 
                 foreach(var item in students) {
-                    Console.WriteLine("{0, -30} {1, -20} {2, -5}", item.Surname, item.Name, (0.3 * item.Homeworks.Average() + 0.7 * item.Exam));
+                    Console.WriteLine("{0, -30} {1, -20} {2, -5}", item.Surname, item.Name, item.FinalPoints());
                 }
 
             } else {
@@ -142,7 +146,7 @@ namespace _3LD {
                 Console.Write('\n');
 
                 foreach(var item in students) {
-                    Console.WriteLine("{0, -30} {1, -20} {2, -21} {3, -20}", item.Surname, item.Name, (0.3 * item.Homeworks.Average() + 0.7 * item.Exam), GetMedian(item.Homeworks));
+                    Console.WriteLine("{0, -30} {1, -20} {2, -21} {3, -20}", item.Surname, item.Name, item.FinalPoints(), GetMedian(item.Homeworks));
                 }
 
             }
@@ -179,6 +183,15 @@ namespace _3LD {
             students = students.OrderBy(student => student.Name).ToList();
             return students;
 
+        }
+
+        public string convertToCsvString(Student student) {
+            var line = $"{student.Name},{student.Surname},";
+            foreach (var item in student.Homeworks) {
+                line += $"{item},";
+            }
+            line += $"{student.Exam}";
+            return line;
         }
     }
 }
