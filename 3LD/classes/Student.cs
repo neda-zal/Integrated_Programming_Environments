@@ -117,7 +117,7 @@ namespace _3LD {
 
         public static void showInTable(List<Student> students, Boolean median) {
 
-            students.OrderBy(student => student.Surname);
+            students.OrderBy(student => student.Name).ToList();
 
             Console.Write('\n');
             if(median  == false) {
@@ -176,7 +176,7 @@ namespace _3LD {
                 throw e;
             }
 
-            students.OrderBy(student => student.Name);
+            students.OrderBy(student => student.Name).ToList();
             return students;
 
         }
