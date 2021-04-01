@@ -46,7 +46,7 @@ namespace _3LD
         public static void generateStudents(int amount) {
 
             Stopwatch timer = new Stopwatch();
-            timer.Reset();
+            timer.Restart();
 
             List<Student> students = new List<Student>();
             
