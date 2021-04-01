@@ -15,3 +15,7 @@ Added functionality:
 
 -  Added functionality to read students data from csv file and add them to the list
 -  Table data is sorted according to students name
+
+### Release v0.3
+
+-  Exception handling was implements with releases v0.1 and v0.2
