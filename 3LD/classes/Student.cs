@@ -176,7 +176,7 @@ namespace _3LD {
                 throw e;
             }
 
-            students.OrderBy(student => student.Name).ToList();
+            students = students.OrderBy(student => student.Name).ToList();
             return students;
 
         }
