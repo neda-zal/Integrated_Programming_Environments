@@ -18,4 +18,4 @@ Added functionality:
 
 ### Release v0.3
 
--  Exception handling was implements with releases v0.1 and v0.2
+-  Exception handling was implemented with releases v0.1 and v0.2
