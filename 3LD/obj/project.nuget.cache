@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/I25aBSNIdCcai5bY3xS6GuXZQrWQ8n3SfRLFRk5fSYXp8suiBOLtsPa3F1x15UCt8659HV5h7yonIQd9aFwEA==",
+  "dgSpecHash": "pr3zkr3vNur/95TFhck/AXhaJya683nIl/MSbte6BCoqi73wW/5DCbzyK72s5JT+08F3w/LO1XaBxBCvyg8XDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nza\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nza\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\nza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\nza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\nza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/neda_zalieskaite/Desktop/Integrated_Programming_Environments/3LD/3LD.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

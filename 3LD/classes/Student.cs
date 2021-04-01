@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using static System.String;
+using System.IO;
 using System.Collections.Generic;
 
 namespace _3LD {
@@ -30,6 +31,13 @@ namespace _3LD {
             this.exam = random.Next(1, 10);
         }
 
+        public Student(string name, string surname, List<int> homeworks, int exam) {
+            this.name = name;
+            this.surname = surname;
+            this.homeworks = homeworks;
+            this.exam = exam;
+        }
+
         public static Boolean isInRange(int x) {
 
             if(Enumerable.Range(MINIMUM, MAXIMUM).Contains(x)) {
@@ -40,7 +48,7 @@ namespace _3LD {
 
         }
 
-        public static decimal GetMedian(IEnumerable<int> homeworks) {
+        public static double GetMedian(IEnumerable<int> homeworks) {
             // Create a copy of the input, and sort the copy
             int[] temp = homeworks.ToArray();
             Array.Sort(temp);
@@ -49,9 +57,9 @@ namespace _3LD {
                 throw new InvalidOperationException("Empty collection");
             } else if (count % 2 == 0) {
                 // count is even, average two middle elements
-                int a = temp[count / 2 - 1];
-                int b = temp[count / 2];
-                return (a + b) / 2m;
+                double a = temp[count / 2 - 1];
+                double b = temp[count / 2];
+                return a + b / 2;
             } else {
                 // count is odd, return the middle element
                 return temp[count / 2];
@@ -109,6 +117,8 @@ namespace _3LD {
 
         public static void showInTable(List<Student> students, Boolean median) {
 
+            students = students.OrderBy(student => student.Name).ToList();
+
             Console.Write('\n');
             if(median  == false) {
                 Console.WriteLine("{0, -30} {1, -20} {2, -5}", "Surname", "Name", "Final points (Avg.)");
@@ -137,6 +147,38 @@ namespace _3LD {
 
             }
             
+        }
+
+        public static List<Student> ReadFromFile() {
+
+            List<Student> students = new List<Student>();
+
+            try {
+                var reader = new StreamReader(@Environment.CurrentDirectory + "//assets//students.csv");
+                bool isFirst = true;
+                while (!reader.EndOfStream) {
+
+                    var line = reader.ReadLine();
+                    var split = line.Split(',');
+                    if(isFirst) {
+                        isFirst=false;
+                        continue;
+                    }
+
+                    List<int> grades = new List<int>();
+                    for(int i = 2; i < 7; i++) {
+                        grades.Add(int.Parse(split[i]));
+                    }
+                    Student stud = new Student(split[0], split[1], grades, int.Parse(split[7]));
+                    students.Add(stud);
+                }
+            } catch(Exception e) {
+                throw e;
+            }
+
+            students.OrderBy(student => student.Name).ToList();
+            return students;
+
         }
     }
 }
