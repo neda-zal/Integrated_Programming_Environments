@@ -26,3 +26,10 @@ Added functionality:
 
 Performance testing results:
 ![plot](./3LD/assets/screen.png?raw=true 'Performance testing results')
+
+### Release v0.5
+
+-  Implemented sorting list functionality with 10000, 100000, 1000000, 10000000 students. Used list types: List<T>, LinkedList<T>, Queue<T>.
+
+Performance testing results:
+![plot](./3LD/assets/Capture.PNG?raw=true 'Performance testing results')
