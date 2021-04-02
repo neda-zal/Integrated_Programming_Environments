@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Linq;
 
 namespace _3LD
 {
@@ -140,23 +141,20 @@ namespace _3LD
 
             var students = Helpers.chooseContainer(filename, choice);
 
-            StreamWriter passedStudentList = new StreamWriter($"assets/passed_students_of_{amount}.csv");
-            StreamWriter failedStudentList = new StreamWriter($"assets/failed_students_of_{amount}.csv");
+            var passedStudentList = (IEnumerable<Student>)Activator.CreateInstance(students.GetType());
+            var failedStudentList = (IEnumerable<Student>)Activator.CreateInstance(students.GetType());
 
             foreach(Student student in students) {
                 if (student.FinalPoints() >= 5) {
-                    passedStudentList.WriteLine(student.convertToCsvString());
+                    passedStudentList.Append(student);
                 } else {
-                    failedStudentList.WriteLine(student.convertToCsvString());
+                    failedStudentList.Append(student);
                 }                
             }
 
-            passedStudentList.Close();
-            failedStudentList.Close();
-
             timer.Stop();
 
-            Console.WriteLine($"Time elapsed sorting {students.GetType().Name} {amount} random {timer.Elapsed} students.");
+            Console.WriteLine($"Time elapsed sorting {students.GetType().Name} with {amount} random students: {timer.Elapsed} ");
 
         }
 

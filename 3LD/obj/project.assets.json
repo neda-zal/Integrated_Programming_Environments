@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neda\\Desktop\\IntegruotosProgAplinkos\\3LD\\3LD.csproj",
+      "projectUniqueName": "C:\\Users\\Neda\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
       "projectName": "3LD",
-      "projectPath": "C:\\Users\\Neda\\Desktop\\IntegruotosProgAplinkos\\3LD\\3LD.csproj",
+      "projectPath": "C:\\Users\\Neda\\Desktop\\Integrated_Programming_Environments\\3LD\\3LD.csproj",
       "packagesPath": "C:\\Users\\Neda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neda\\Desktop\\IntegruotosProgAplinkos\\3LD\\obj\\",
+      "outputPath": "C:\\Users\\Neda\\Desktop\\Integrated_Programming_Environments\\3LD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Neda\\AppData\\Roaming\\NuGet\\NuGet.Config",

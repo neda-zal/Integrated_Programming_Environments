@@ -33,3 +33,10 @@ Performance testing results:
 
 Performance testing results:
 ![plot](./3LD/assets/Capture.PNG?raw=true 'Performance testing results')
+
+### Release v1.0
+
+-  Implemented sorting strategy no. 1 with 10000, 100000, 1000000, 10000000 students.
+   Performance testing results:
+
+![plot](./3LD/assets/Capture1.PNG?raw=true 'Performance testing results')
