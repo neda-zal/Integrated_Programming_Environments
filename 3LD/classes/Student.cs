@@ -27,8 +27,10 @@ namespace _3LD {
             this.name = "Name" + random.Next(10000);
             this.surname = "Surname" + random.Next(10000);
             this.homeworks = new List<int>();
-            for (int i = 0; i < 4; i++) this.homeworks.Add(random.Next(MINIMUM, MAXIMUM));
-            this.exam = random.Next(1, 10);
+            for (int i = 0; i < 5; i++) {
+                this.homeworks.Add(random.Next(MINIMUM, MAXIMUM));
+            };
+            this.exam = random.Next(MINIMUM, MAXIMUM);
         }
 
         public Student(string name, string surname, List<int> homeworks, int exam) {
@@ -153,12 +155,12 @@ namespace _3LD {
             
         }
 
-        public static List<Student> ReadFromFile() {
+        public static List<Student> ReadFromFile(string filename) {
 
             List<Student> students = new List<Student>();
 
             try {
-                var reader = new StreamReader(@Environment.CurrentDirectory + "//assets//students.csv");
+                var reader = new StreamReader(@Environment.CurrentDirectory + filename);
                 bool isFirst = true;
                 while (!reader.EndOfStream) {
 
@@ -185,12 +187,12 @@ namespace _3LD {
 
         }
 
-        public string convertToCsvString(Student student) {
-            var line = $"{student.Name},{student.Surname},";
-            foreach (var item in student.Homeworks) {
+        public string convertToCsvString() {
+            var line = $"{Name},{Surname},";
+            foreach (var item in Homeworks) {
                 line += $"{item},";
             }
-            line += $"{student.Exam}";
+            line += $"{Exam}";
             return line;
         }
     }
